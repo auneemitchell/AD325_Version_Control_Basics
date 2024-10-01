@@ -1,6 +1,4 @@
-"""
-app.py module runs the to-do list application.
-"""
+"""app.py module runs the to-do list application."""
 
 import argparse
 from task_manager import TaskManager
