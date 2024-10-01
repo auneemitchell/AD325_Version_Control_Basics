@@ -14,6 +14,9 @@ Example:
 $ python app.py --add "finish homework" # add a task to do
 $ python app.py --view # see that it was saved
 Task 1: finish homework
+$ python app.py --complete 1 # mark the task as completed
+$ python app.py --view # see that it was completed
+Task 1: finish homework - COMPLETED
 $ python app.py --delete 1 # delete the task
 $ python app.py --view # confirm that task was deleted
 Features
