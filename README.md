@@ -23,4 +23,4 @@ Delete a Task: Remove tasks that are no longer needed.
 Complete a Task: Mark tasks as completed.
 Edit a Task: Update the details of your tasks.
 Team
-Student A - Aune Mitchell, Student B -
+Student A - Aune Mitchell, Student B - Psy Cisneros
