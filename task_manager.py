@@ -54,7 +54,7 @@ class TaskManager:
         if self.tasks:
             if 0 <= index < len(self.tasks):
                 # Append " -- Complete" to end of task string at specified index
-                self.tasks[index] += " -- Complete"
+                self.tasks[index] += " - COMPLETED"
                 self.save_tasks()
             else:
                 print(f"Warning: provided task number {index + 1} does not exist.")
