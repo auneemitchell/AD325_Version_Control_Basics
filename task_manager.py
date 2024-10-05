@@ -60,3 +60,8 @@ class TaskManager:
                 print(f"Warning: provided task number {index + 1} does not exist.")
         else:
             print("Warning: no tasks found.")
+
+ # for reversing the task list           
+    def reverse_tasks(self):
+        self.tasks.reverse()
+        self.save_tasks()
