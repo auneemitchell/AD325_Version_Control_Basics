@@ -33,7 +33,7 @@ class TaskManager:
     def view_tasks(self):
         """Displays the tasks in the task list."""
         for index, task in enumerate(self.tasks, start=1):
-            print(f"Task {index}*** {task}")
+            print(f"Task {index} --- {task}")
 
     def delete_task(self, index):
         """Deletes the task at the specified index."""
