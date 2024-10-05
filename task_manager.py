@@ -40,7 +40,7 @@ class TaskManager:
         # Making sure index is in range
         if self.tasks:
             if 0 <= index < len(self.tasks):
-                self.tasks.pop(index)
+                self.tasks.pop(len(self.tasks) - 1)
                 self.save_tasks()
             else:
                 print(f"Warning: provided task number {index + 1} does not exist.")
