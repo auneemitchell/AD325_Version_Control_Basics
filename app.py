@@ -10,6 +10,7 @@ def main():
     parser.add_argument('--view', action='store_true', help='View all tasks')
     parser.add_argument('--delete', metavar='INDEX', type=int, help='Delete a task by its index')
     parser.add_argument('--complete', metavar='INDEX', type=int, help='Mark a task as completed')
+    parser.add_argument('--reverse', action='store_true',  help='Reverse the task list')
     args = parser.parse_args()
 
     manager = TaskManager()
@@ -22,6 +23,8 @@ def main():
         manager.delete_task(args.delete - 1)  # Adjust for zero-based index
     elif args.complete is not None:
         manager.complete_task(args.complete - 1)  # Adjust for zero-based index
+    elif args.reverse:
+        manager.reverse_tasks()
     else:
         parser.print_help()
 
