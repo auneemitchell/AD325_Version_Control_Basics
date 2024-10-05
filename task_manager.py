@@ -27,7 +27,7 @@ class TaskManager:
 
     def add_task(self, task):
         """Adds the given task to the task list and saves it."""
-        self.tasks.insert(0, task)
+        self.tasks.append(task)
         self.save_tasks()
 
     def view_tasks(self):
